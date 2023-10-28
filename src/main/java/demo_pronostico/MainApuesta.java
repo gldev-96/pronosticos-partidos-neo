@@ -1,6 +1,6 @@
 package demo_pronostico;
 
-public class HelloWorldService {
+public class MainApuesta {
 
 	public static void main(String[] args) {	
 		

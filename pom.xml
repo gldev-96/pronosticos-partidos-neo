@@ -5,6 +5,8 @@
 	<groupId>com.grupo1</groupId>
 	<artifactId>pronosticos-partidos-neo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -19,7 +21,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>main.Inicio</mainClass>
+							<mainClass>demo_pronostico.MainApuesta</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -37,17 +39,27 @@
 			</plugin>
 		</plugins>
 	</build>
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.30</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<dependency>
+    <groupId>com.opencsv</groupId>
+    <artifactId>opencsv</artifactId>
+    <version>5.2</version>
+</dependency>
+
 	</dependencies>
+	
 </project>
