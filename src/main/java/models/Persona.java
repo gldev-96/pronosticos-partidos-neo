@@ -6,4 +6,6 @@ import lombok.Data;
 public class Persona {
 	private String nombre;
 	private int puntos;
+	
+
 }
