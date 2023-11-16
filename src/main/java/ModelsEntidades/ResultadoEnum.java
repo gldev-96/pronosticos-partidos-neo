@@ -1,4 +1,4 @@
-package models;
+package ModelsEntidades;
 
 public enum ResultadoEnum {
 	Ganador, 
