@@ -1,8 +1,8 @@
-Paraguay,2,0,Uruguay,Carlos,1
-Colombia,x,,Argentina,Carlos,1
-Colombia,,x,Uruguay,Carlos,2
-Paraguay,x,,Argentina,Carlos,2
-Paraguay,,x,Uruguay,Maria,1
-Colombia,,x,Argentina,Maria,1
-Colombia,x,,Uruguay,Maria,2
-Paraguay,,x,Argentina,Maria,2
+Paraguay,1,0,Uruguay,Carlos,1
+Colombia,2,1,Argentina,Carlos,1
+Colombia,0,4,Uruguay,Carlos,2
+Paraguay,0,0,Argentina,Carlos,2
+Paraguay,0,5,Uruguay,Maria,1
+Colombia,1,3,Argentina,Maria,1
+Colombia,1,0,Uruguay,Maria,2
+Paraguay,2,3,Argentina,Maria,2
