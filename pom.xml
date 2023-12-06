@@ -2,11 +2,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.grupo1</groupId>
+	<groupId>team1</groupId>
 	<artifactId>pronosticos-partidos-neo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-	
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -14,7 +14,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.11.0</version>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -22,7 +22,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>demo_pronostico.MainApuesta</mainClass>
+							<mainClass>Main.MainApuesta</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
@@ -32,7 +32,7 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0</version>
 				<configuration>
-					<testSourceDirectory>/Agenda/src/test/java</testSourceDirectory>
+					<testSourceDirectory>/pronosticos-partidos-neo/src/test/java</testSourceDirectory>
 					<includes>
 						<include>Prueba.java</include>
 					</includes>
@@ -40,35 +40,38 @@
 			</plugin>
 		</plugins>
 	</build>
-	
-	
+
+
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.12</version>
 		</dependency>
-		
-		
+
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.30</version>
 			<scope>provided</scope>
 		</dependency>
-		
-		<dependency>
-    <groupId>com.opencsv</groupId>
-    <artifactId>opencsv</artifactId>
-    <version>5.2</version>
-                </dependency>
-		
-		<dependency>
-    <groupId>mysql</groupId>
-    <artifactId>mysql-connector-java</artifactId>
-    <version>5.1.38</version>
-               </dependency>
 
-	</dependencies>
-	
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.38</version>
+		</dependency>
+
+
+
+
+
+
 </project>

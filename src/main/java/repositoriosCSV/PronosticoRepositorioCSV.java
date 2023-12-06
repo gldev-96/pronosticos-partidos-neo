@@ -1,5 +1,7 @@
-package repositorios;
+package repositoriosCSV;
+
 import com.opencsv.CSVReader;
+
 import lombok.Builder;
 import lombok.Data;
 import lombok.SneakyThrows;
@@ -10,7 +12,7 @@ import java.util.List;
 
 @Data
 @Builder
-public class PronosticoRepositorio {
+public class PronosticoRepositorioCSV {
     private String equipo1;
     private int golesEquipo1;
     private int golesEquipo2;
@@ -20,13 +22,13 @@ public class PronosticoRepositorio {
 
     @SneakyThrows //exception
     
-    public static List<PronosticoRepositorio> leerDesdeCSV(String rutaArchivo) {
-        List<PronosticoRepositorio> pronosticos = new ArrayList<>();
+    public static List<PronosticoRepositorioCSV> leerDesdeCSV(String rutaArchivo) {
+        List<PronosticoRepositorioCSV> pronosticos = new ArrayList<>();
        
         try (CSVReader lector = new CSVReader(new FileReader(rutaArchivo))) {
             String[] nextLine;
             while ((nextLine = lector.readNext()) != null) {
-                PronosticoRepositorio pronostico = PronosticoRepositorio.builder() //setteo c/atributo en base a lo que esta en el archivo CSV
+                PronosticoRepositorioCSV pronostico = PronosticoRepositorioCSV.builder() //setteo c/atributo en base a lo que esta en el archivo CSV
                         .equipo1(nextLine[0])
                         .golesEquipo1(Integer.parseInt(nextLine[1]))
                         .golesEquipo2(Integer.parseInt(nextLine[2]))
